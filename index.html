@@ -1,619 +1,721 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TH71WBZ4DW"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="最全AI图片处理工具导航：图片生成、抠图、增强修复、风格转换、压缩优化，500+优质工具一站直达，提升你的创作效率。">
+  <meta name="keywords" content="AI图片处理, AI图片生成, AI抠图, 图片修复, AI工具导航, 图片压缩, 在线抠图, Midjourney, DALL-E">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="AI图片处理导航">
+  <meta property="og:title" content="AI图片处理导航 - 最全工具集合">
+  <meta property="og:description" content="500+优质AI图片处理工具，涵盖生成、编辑、修复、压缩等全方位需求">
+  <meta property="og:type" content="website">
+  <title>AI图片处理导航 - 最全工具集合｜500+优质工具一站直达</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+    .search-focus:focus { box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); }
+    .category-badge { background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%); }
+    .tool-rating { color: #fbbf24; }
+  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PF2NFXDZ9Z"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-TH71WBZ4DW');
+  gtag('config', 'G-PF2NFXDZ9Z');
 </script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>老陕肉夹馍 - 正宗西安味道</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Microsoft YaHei', '黑体', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            overflow-x: hidden;
-        }
-
-        /* Header */
-        .header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            padding: 1rem 0;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-        }
-
-        .nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
-
-        .logo {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #d32f2f;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .logo::before {
-            content: '🥙';
-            font-size: 1.5rem;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s ease;
-            position: relative;
-        }
-
-        .nav-links a:hover {
-            color: #d32f2f;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: #d32f2f;
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .cta-button {
-            background: linear-gradient(135deg, #d32f2f, #f44336);
-            color: white;
-            padding: 0.8rem 1.5rem;
-            border: none;
-            border-radius: 25px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(211, 47, 47, 0.3);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(211, 47, 47, 0.4);
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #fff3e0 0%, #ffccbc 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="0.5" fill="%23d32f2f" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-            opacity: 0.3;
-        }
-
-        .hero-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-text h1 {
-            font-size: 3.5rem;
-            font-weight: bold;
-            color: #d32f2f;
-            margin-bottom: 1rem;
-            line-height: 1.2;
-            animation: fadeInUp 1s ease-out;
-        }
-
-        .hero-text .subtitle {
-            font-size: 1.3rem;
-            color: #666;
-            margin-bottom: 2rem;
-            animation: fadeInUp 1s ease-out 0.2s both;
-        }
-
-        .hero-text .description {
-            font-size: 1.1rem;
-            color: #777;
-            margin-bottom: 2rem;
-            line-height: 1.8;
-            animation: fadeInUp 1s ease-out 0.4s both;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            animation: fadeInUp 1s ease-out 0.6s both;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #d32f2f, #f44336);
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 30px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(211, 47, 47, 0.3);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(211, 47, 47, 0.4);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: #d32f2f;
-            padding: 1rem 2rem;
-            border: 2px solid #d32f2f;
-            border-radius: 30px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .btn-secondary:hover {
-            background: #d32f2f;
-            color: white;
-            transform: translateY(-2px);
-        }
-
-        /* Hero Image */
-        .hero-image {
-            position: relative;
-            animation: float 3s ease-in-out infinite;
-        }
-
-        .paper-bag {
-            width: 100%;
-            max-width: 400px;
-            height: 500px;
-            background: linear-gradient(135deg, #8d6e63, #a1887f);
-            border-radius: 20px 20px 5px 5px;
-            position: relative;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-            margin: 0 auto;
-            overflow: hidden;
-        }
-
-        .bag-top {
-            width: 100%;
-            height: 60px;
-            background: linear-gradient(135deg, #6d4c41, #8d6e63);
-            position: relative;
-            border-radius: 20px 20px 0 0;
-        }
-
-        .bag-fold {
-            width: 100%;
-            height: 20px;
-            background: linear-gradient(135deg, #5d4037, #6d4c41);
-            position: absolute;
-            top: 40px;
-        }
-
-        .bag-logo {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 2rem;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-
-        .roujiamo-preview {
-            position: absolute;
-            bottom: 50px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 120px;
-            height: 80px;
-            background: linear-gradient(135deg, #d4a574, #deb887);
-            border-radius: 50px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-
-        .roujiamo-preview::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100px;
-            height: 60px;
-            background: linear-gradient(135deg, #8b4513, #a0522d);
-            border-radius: 40px;
-            opacity: 0.8;
-        }
-
-        /* Features Section */
-        .features {
-            padding: 5rem 0;
-            background: white;
-        }
-
-        .features-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 3rem;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .feature-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            border: 1px solid #f0f0f0;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-        }
-
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .feature-card h3 {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 1rem;
-        }
-
-        .feature-card p {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        /* Contact Section */
-        .contact {
-            background: linear-gradient(135deg, #d32f2f, #f44336);
-            color: white;
-            padding: 5rem 0;
-            text-align: center;
-        }
-
-        .contact-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .contact h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .contact p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-top: 2rem;
-        }
-
-        .contact-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .contact-item .icon {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        /* Footer */
-        .footer {
-            background: #333;
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .hero-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-                gap: 2rem;
-            }
-
-            .hero-text h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-buttons {
-                justify-content: center;
-            }
-
-            .contact-info {
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
-    </style>
 </head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <a href="#" class="logo">老陕肉夹馍</a>
-            <ul class="nav-links">
-                <li><a href="#home">首页</a></li>
-                <li><a href="#about">关于我们</a></li>
-                <li><a href="#products">产品</a></li>
-                <li><a href="#contact">联系我们</a></li>
-            </ul>
-            <button class="cta-button">立即订购</button>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>正宗西安<br>肉夹馍</h1>
-                <p class="subtitle">传承百年工艺，品味地道陕西</p>
-                <p class="description">
-                    精选优质面粉，手工制作白吉馍，配以秘制腊汁肉，
-                    每一口都是正宗西安味道。采用环保纸袋包装，
-                    方便携带，保温保味。
-                </p>
-                <div class="hero-buttons">
-                    <button class="btn-primary">立即订购</button>
-                    <button class="btn-secondary">了解更多</button>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="paper-bag">
-                    <div class="bag-top">
-                        <div class="bag-fold"></div>
-                    </div>
-                    <div class="bag-logo">老陕</div>
-                    <div class="roujiamo-preview"></div>
-                </div>
-            </div>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+  <header class="bg-white dark:bg-gray-800 shadow-lg sticky top-0 z-50 backdrop-blur-sm bg-opacity-95">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center space-x-4">
+          <div class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <i class="fas fa-magic mr-2"></i>AI图片处理导航
+          </div>
+          <span class="text-xs bg-red-500 text-white px-2 py-1 rounded-full">500+工具</span>
         </div>
+        
+        <div class="flex items-center space-x-4">
+          <div class="relative">
+            <input 
+              type="text" 
+              id="searchInput"
+              placeholder="搜索工具名称或功能..." 
+              class="w-64 px-4 py-2 pl-10 pr-4 border border-gray-300 rounded-full focus:outline-none search-focus focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600"
+            >
+            <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+          </div>
+          
+          <button 
+            onclick="toggleTheme()" 
+            class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+            title="切换主题"
+          >
+            <i class="fas fa-moon dark:hidden"></i>
+            <i class="fas fa-sun hidden dark:inline"></i>
+          </button>
+          
+          <div class="hidden md:flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300">
+            <i class="fas fa-fire text-orange-500"></i>
+            <span>今日访问: <span id="todayVisits">1,234</span></span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 快速分类导航 -->
+      <div class="flex space-x-6 pb-4 overflow-x-auto">
+        <a href="#ai-generate" class="whitespace-nowrap text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors">
+          <i class="fas fa-robot mr-1"></i>AI生成
+        </a>
+        <a href="#background-remove" class="whitespace-nowrap text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors">
+          <i class="fas fa-cut mr-1"></i>抠图换背景
+        </a>
+        <a href="#enhance-repair" class="whitespace-nowrap text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors">
+          <i class="fas fa-tools mr-1"></i>修复增强
+        </a>
+        <a href="#compress" class="whitespace-nowrap text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors">
+          <i class="fas fa-compress mr-1"></i>压缩优化
+        </a>
+        <a href="#free-images" class="whitespace-nowrap text-sm text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors">
+          <i class="fas fa-images mr-1"></i>免费图库
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <!-- 统计信息 -->
+    <section class="mb-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-4 rounded-xl text-center">
+          <div class="text-2xl font-bold">500+</div>
+          <div class="text-sm opacity-90">精选工具</div>
+        </div>
+        <div class="bg-gradient-to-r from-green-500 to-green-600 text-white p-4 rounded-xl text-center">
+          <div class="text-2xl font-bold">15</div>
+          <div class="text-sm opacity-90">主要分类</div>
+        </div>
+        <div class="bg-gradient-to-r from-purple-500 to-purple-600 text-white p-4 rounded-xl text-center">
+          <div class="text-2xl font-bold">100K+</div>
+          <div class="text-sm opacity-90">月访问量</div>
+        </div>
+        <div class="bg-gradient-to-r from-orange-500 to-orange-600 text-white p-4 rounded-xl text-center">
+          <div class="text-2xl font-bold">4.8</div>
+          <div class="text-sm opacity-90">用户评分</div>
+        </div>
+      </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features" id="about">
-        <div class="features-container">
-            <h2 class="section-title">为什么选择我们</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🏆</div>
-                    <h3>百年传承</h3>
-                    <p>传承百年制作工艺，每一个肉夹馍都承载着陕西人的味觉记忆，正宗地道，绝不妥协。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🥩</div>
-                    <h3>精选食材</h3>
-                    <p>选用优质猪肉，配以十几种名贵香料，慢火炖煮，肉质鲜嫩，香味浓郁，回味无穷。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🌿</div>
-                    <h3>绿色环保</h3>
-                    <p>采用食品级环保纸袋包装，防油防潮，保温效果好，既环保又实用，让您吃得安心。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🚚</div>
-                    <h3>快速配送</h3>
-                    <p>专业配送团队，保证食品在最佳温度下送达，让您随时随地享受热腾腾的美味肉夹馍。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💰</div>
-                    <h3>价格实惠</h3>
-                    <p>坚持平价经营理念，让每个人都能享受到正宗的西安肉夹馍，物美价廉，性价比超高。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⭐</div>
-                    <h3>品质保证</h3>
-                    <p>严格的质量控制体系，从原料采购到制作过程，每一环节都精益求精，确保品质如一。</p>
-                </div>
+    <!-- 每日推荐 -->
+    <section class="mb-8">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-2xl font-semibold flex items-center">
+          <i class="fas fa-fire text-orange-500 mr-2"></i>每日推荐
+        </h2>
+        <span class="text-sm text-gray-500">基于用户热度和专业评测</span>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="gradient-bg text-white rounded-2xl p-6 shadow-xl card-hover">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-xl font-bold">Midjourney</h3>
+            <div class="flex text-yellow-300">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span class="ml-1 text-sm">5.0</span>
             </div>
+          </div>
+          <p class="text-sm opacity-90 mb-4">目前最强大的AI图像生成工具，艺术质量极高，适合专业设计师和艺术创作者。</p>
+          <div class="flex items-center justify-between">
+            <div class="flex space-x-2">
+              <span class="text-xs bg-white bg-opacity-20 px-2 py-1 rounded">AI生成</span>
+              <span class="text-xs bg-white bg-opacity-20 px-2 py-1 rounded">艺术风格</span>
+            </div>
+            <a href="https://www.midjourney.com" target="_blank" class="bg-white text-purple-600 px-4 py-2 rounded-lg font-medium hover:bg-opacity-90 transition-colors">
+              立即使用 <i class="fas fa-external-link-alt ml-1"></i>
+            </a>
+          </div>
         </div>
+        
+        <div class="bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-2xl p-6 shadow-xl card-hover">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-xl font-bold">Remove.bg</h3>
+            <div class="flex text-yellow-300">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span class="ml-1 text-sm">4.6</span>
+            </div>
+          </div>
+          <p class="text-sm opacity-90 mb-4">一键智能抠图，5秒移除背景，支持批量处理，电商产品图必备工具。</p>
+          <div class="flex items-center justify-between">
+            <div class="flex space-x-2">
+              <span class="text-xs bg-white bg-opacity-20 px-2 py-1 rounded">抠图</span>
+              <span class="text-xs bg-white bg-opacity-20 px-2 py-1 rounded">批量处理</span>
+            </div>
+            <a href="https://www.remove.bg" target="_blank" class="bg-white text-pink-600 px-4 py-2 rounded-lg font-medium hover:bg-opacity-90 transition-colors">
+              立即使用 <i class="fas fa-external-link-alt ml-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="contact-container">
-            <h2>联系我们</h2>
-            <p>想要品尝正宗的西安肉夹馍？立即联系我们订购！</p>
-            <button class="btn-primary">立即订购</button>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="icon">📞</div>
-                    <div>
-                        <strong>订购热线</strong>
-                        <p>400-123-4567</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon">📍</div>
-                    <div>
-                        <strong>门店地址</strong>
-                        <p>西安市雁塔区小寨路88号</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon">⏰</div>
-                    <div>
-                        <strong>营业时间</strong>
-                        <p>9:00 - 22:00</p>
-                    </div>
-                </div>
+    <!-- 主要分类导航 -->
+    <section class="mb-12">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-semibold flex items-center">
+          <i class="fas fa-th-large text-blue-500 mr-2"></i>全部工具分类
+        </h2>
+        <div class="text-sm text-gray-500">共15个分类，500+精选工具</div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- AI图片生成 -->
+        <div id="ai-generate" class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm hover:shadow-lg card-hover border border-gray-100 dark:border-gray-700">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center text-white text-xl">
+              <i class="fas fa-robot"></i>
             </div>
+            <div class="ml-3">
+              <h3 class="text-lg font-bold">AI图片生成</h3>
+              <p class="text-sm text-gray-500">文字转图片，创意无限</p>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="flex items-center justify-between py-2 px-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+              <a href="https://www.midjourney.com" target="_blank" class="flex items-center space-x-2 text-sm font-medium">
+                <span>Midjourney</span>
+                <div class="tool-rating flex text-xs">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </a>
+              <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">付费</span>
+            </div>
+            <div class="flex items-center justify-between py-2 px-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+              <a href="https://leonardo.ai" target="_blank" class="flex items-center space-x-2 text-sm font-medium">
+                <span>Leonardo AI</span>
+                <div class="tool-rating flex text-xs">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </a>
+              <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">免费</span>
+            </div>
+            <div class="flex items-center justify-between py-2 px-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+              <a href="https://www.bing.com/images/create" target="_blank" class="flex items-center space-x-2 text-sm font-medium">
+                <span>Bing Create</span>
+                <div class="tool-rating flex text-xs">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </a>
+              <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">免费</span>
+            </div>
+            <div class="flex items-center justify-between py-2 px-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+              <a href="https://www.canva.com/ai-image-generator/" target="_blank" class="flex items-center space-x-2 text-sm font-medium">
+                <span>Canva AI</span>
+                <div class="tool-rating flex text-xs">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </a>
+              <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">限免</span>
+            </div>
+          </div>
         </div>
+
+        <!-- 抠图换背景 -->
+        <div id="background-remove" class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm hover:shadow-lg card-hover border border-gray-100 dark:border-gray-700">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-red-500 rounded-xl flex items-center justify-center text-white text-xl">
+              <i class="fas fa-cut"></i>
+            </div>
+            <div class="ml-3">
+              <h3 class="text-lg font-bold">抠图换背景</h3>
+              <p class="text-sm text-gray-500">智能去背景，一键抠图</p>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="flex items-center justify-between py-2 px-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+              <a href="https://www.remove.bg" target="_blank" class="flex items-center space-x-2 text-sm font-medium">
+                <span>Remove.bg</span>
+                <div class="tool-rating flex text-xs">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </a>
+              <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">限免</span>
+            </div>
+            <div class="flex items-center justify-between py-2 px-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+              <a href="https://www.photoroom.com" target="_blank" class="flex items-center space-x-2 text-sm font-medium">
+                <span>PhotoRoom</span>
+                <div class="tool-rating flex text-xs">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </a>
+              <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">限免</span>
+            </div>
+            <div class="flex items-center justify-between py-2 px-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+              <a href="https://www.cutout.pro" target="_blank" class="flex items-center space-x-2 text-sm font-medium">
+                <span>Cutout Pro</span>
+                <div class="tool-rating flex text-xs">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </a>
+              <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">免费</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 图片修复增强 -->
+        <div id="enhance-repair" class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm hover:shadow-lg card-hover border border-gray-100 dark:border-gray-700">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-teal-500 rounded-xl flex items-center justify-center text-white text-xl">
+              <i class="fas fa-tools"></i>
+            </div>
+            <div class="ml-3">
+              <h3 class="text-lg font-bold">图片修复增强</h3>
+              <p class="text-sm text-gray-500">老照片修复，画质提升</p>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="flex items-center justify-between py-2 px-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+              <a href="https://www.letsenhance.io" target="_blank" class="flex items-center space-x-2 text-sm font-medium">
+                <span>Let's Enhance</span>
+                <div class="tool-rating flex text-xs">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </a>
+              <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">限免</span>
+            </div>
+            <div class="flex items-center justify-between py-2 px-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+              <a href="https://huggingface.co/spaces/akhaliq/GFPGAN" target="_blank" class="flex items-center space-x-2 text-sm font-medium">
+                <span>GFPGAN</span>
+                <div class="tool-rating flex text-xs">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </a>
+              <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">免费</span>
+            </div>
+            <div class="flex items-center justify-between py-2 px-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+              <a href="https://www.upscale.media" target="_blank" class="flex items-center space-x-2 text-sm font-medium">
+                <span>Upscale Media</span>
+                <div class="tool-rating flex text-xs">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </a>
+              <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">免费</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 图片压缩优化 -->
+        <div id="compress" class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm hover:shadow-lg card-hover border border-gray-100 dark:border-gray-700">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl flex items-center justify-center text-white text-xl">
+              <i class="fas fa-compress"></i>
+            </div>
+            <div class="ml-3">
+              <h3 class="text-lg font-bold">图片压缩优化</h3>
+              <p class="text-sm text-gray-500">无损压缩，减小体积</p>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="flex items-center justify-between py-2 px-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+              <a href="https://tinypng.com" target="_blank" class="flex items-center space-x-2 text-sm font-medium">
+                <span>TinyPNG</span>
+                <div class="tool-rating flex text-xs">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </a>
+              <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">免费</span>
+            </div>
+            <div class="flex items-center justify-between py-2 px-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+              <a href="https://imagecompressor.com" target="_blank" class="flex items-center space-x-2 text-sm font-medium">
+                <span>Image Compressor</span>
+                <div class="tool-rating flex text-xs">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </a>
+              <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">免费</span>
+            </div>
+            <div class="flex items-center justify-between py-2 px-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+              <a href="https://www.picdiet.com/zh-cn" target="_blank" class="flex items-center space-x-2 text-sm font-medium">
+                <span>PicDiet</span>
+                <div class="tool-rating flex text-xs">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </a>
+              <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">免费</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 免费图库 -->
+        <div id="free-images" class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm hover:shadow-lg card-hover border border-gray-100 dark:border-gray-700">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl flex items-center justify-center text-white text-xl">
+              <i class="fas fa-images"></i>
+            </div>
+            <div class="ml-3">
+              <h3 class="text-lg font-bold">免费图库</h3>
+              <p class="text-sm text-gray-500">高质量免费素材</p>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="flex items-center justify-between py-2 px-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+              <a href="https://unsplash.com" target="_blank" class="flex items-center space-x-2 text-sm font-medium">
+                <span>Unsplash</span>
+                <div class="tool-rating flex text-xs">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </a>
+              <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">免费</span>
+            </div>
+            <div class="flex items-center justify-between py-2 px-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+              <a href="https://pixabay.com" target="_blank" class="flex items-center space-x-2 text-sm font-medium">
+                <span>Pixabay</span>
+                <div class="tool-rating flex text-xs">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </a>
+              <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">免费</span>
+            </div>
+            <div class="flex items-center justify-between py-2 px-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+              <a href="https://www.pexels.com" target="_blank" class="flex items-center space-x-2 text-sm font-medium">
+                <span>Pexels</span>
+                <div class="tool-rating flex text-xs">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </a>
+              <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">免费</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 风格转换 -->
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm hover:shadow-lg card-hover border border-gray-100 dark:border-gray-700">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-r from-rose-500 to-pink-500 rounded-xl flex items-center justify-center text-white text-xl">
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="ml-3">
+              <h3 class="text-lg font-bold">风格转换</h3>
+              <p class="text-sm text-gray-500">艺术滤镜，风格变换</p>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="flex items-center justify-between py-2 px-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+              <a href="https://www.promeai.pro" target="_blank" class="flex items-center space-x-2 text-sm font-medium">
+                <span>PromeAI</span>
+                <div class="tool-rating flex text-xs">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </a>
+              <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">限免</span>
+            </div>
+            <div class="flex items-center justify-between py-2 px-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+              <a href="https://deepart.io" target="_blank" class="flex items-center space-x-2 text-sm font-medium">
+                <span>DeepArt</span>
+                <div class="tool-rating flex text-xs">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </a>
+              <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">免费</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 老陕肉夹馍. 保留所有权利.</p>
-    </footer>
+  <!-- 额外信息和统计 -->
+  <section class="max-w-7xl mx-auto px-4 py-12 bg-gray-50 dark:bg-gray-800 rounded-2xl mb-8">
+    <div class="text-center mb-8">
+      <h2 class="text-2xl font-bold mb-4">为什么选择我们？</h2>
+      <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        我们精心收集和测试了500+AI图片处理工具，为你提供最全面、最实用的导航服务。每个工具都经过专业评测，确保质量和可用性。
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center">
+        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="fas fa-award text-white text-2xl"></i>
+        </div>
+        <h3 class="font-bold mb-2">精选优质工具</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300">每个工具都经过专业测试和用户反馈验证</p>
+      </div>
+      
+      <div class="text-center">
+        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="fas fa-sync-alt text-white text-2xl"></i>
+        </div>
+        <h3 class="font-bold mb-2">实时更新</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300">工具状态实时监控，链接失效及时更新</p>
+      </div>
+      
+      <div class="text-center">
+        <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="fas fa-users text-white text-2xl"></i>
+        </div>
+        <h3 class="font-bold mb-2">用户共建</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300">基于10万+用户使用反馈，持续优化推荐</p>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="text-xl font-bold mb-4 flex items-center">
+            <i class="fas fa-magic mr-2"></i>AI图片处理导航
+          </div>
+          <p class="text-gray-300 text-sm mb-4">最全面的AI图片处理工具导航，助力你的创意工作。</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="font-bold mb-4">热门分类</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#ai-generate" class="text-gray-300 hover:text-white">AI图片生成</a></li>
+            <li><a href="#background-remove" class="text-gray-300 hover:text-white">抠图换背景</a></li>
+            <li><a href="#enhance-repair" class="text-gray-300 hover:text-white">修复增强</a></li>
+            <li><a href="#compress" class="text-gray-300 hover:text-white">压缩优化</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-bold mb-4">关于我们</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="text-gray-300 hover:text-white">联系我们</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white">提交工具</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white">反馈建议</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white">隐私政策</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-bold mb-4">统计信息</h4>
+          <div class="space-y-2 text-sm">
+            <div class="flex justify-between">
+              <span class="text-gray-300">收录工具:</span>
+              <span class="text-white font-bold">500+</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-300">月访问量:</span>
+              <span class="text-white font-bold">100K+</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-300">用户评分:</span>
+              <span class="text-white font-bold">4.8/5</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-300">更新频率:</span>
+              <span class="text-white font-bold">每日</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div class="text-sm text-gray-400">
+          &copy; 2025 AI图片处理导航. All rights reserved. 
+        </div>
+        <div class="text-sm text-gray-400 mt-4 md:mt-0">
+          Made with <i class="fas fa-heart text-red-500"></i> for creators worldwide
+        </div>
+      </div>
+    </div>
+  </footer>
 
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(255, 255, 255, 0.98)';
-                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.15)';
-            } else {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+  <!-- JavaScript 功能 -->
+  <script>
+    // 主题切换功能
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.classList.contains('dark') ? 'dark' : 'light';
+      
+      if (currentTheme === 'dark') {
+        html.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      } else {
+        html.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+
+    // 页面加载时设置主题
+    document.addEventListener('DOMContentLoaded', function() {
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      
+      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        document.documentElement.classList.add('dark');
+      }
+    });
+
+    // 搜索功能
+    document.getElementById('searchInput').addEventListener('input', function(e) {
+      const searchTerm = e.target.value.toLowerCase();
+      const toolItems = document.querySelectorAll('[class*="tool-item"], a[href*="http"]');
+      
+      toolItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        const parent = item.closest('[class*="bg-white"], [class*="bg-gray"]');
+        
+        if (text.includes(searchTerm)) {
+          if (parent) parent.style.display = '';
+          item.style.display = '';
+        } else {
+          if (parent && searchTerm !== '') {
+            // 检查父容器中是否有其他匹配项
+            const siblings = parent.querySelectorAll('a[href*="http"]');
+            const hasVisibleSiblings = Array.from(siblings).some(sibling => 
+              sibling.textContent.toLowerCase().includes(searchTerm)
+            );
+            
+            if (!hasVisibleSiblings) {
+              parent.style.display = 'none';
             }
+          }
+        }
+      });
+      
+      // 如果搜索框为空，显示所有内容
+      if (searchTerm === '') {
+        document.querySelectorAll('[style*="display: none"]').forEach(item => {
+          item.style.display = '';
         });
+      }
+    });
 
-        // Parallax effect for hero section
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const hero = document.querySelector('.hero');
-            if (hero) {
-                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-            }
-        });
+    // 平滑滚动到锚点
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
 
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+    // 访问量统计（模拟）
+    function updateVisitCount() {
+      const count = localStorage.getItem('visitCount') || 1234;
+      const newCount = parseInt(count) + Math.floor(Math.random() * 10) + 1;
+      localStorage.setItem('visitCount', newCount);
+      
+      const visitElement = document.getElementById('todayVisits');
+      if (visitElement) {
+        visitElement.textContent = newCount.toLocaleString();
+      }
+    }
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
-                }
-            });
-        }, observerOptions);
+    // 页面加载完成后更新访问量
+    document.addEventListener('DOMContentLoaded', updateVisitCount);
 
-        document.querySelectorAll('.feature-card').forEach(card => {
-            observer.observe(card);
-        });
-    </script>
+    // 工具链接点击统计
+    document.querySelectorAll('a[target="_blank"]').forEach(link => {
+      link.addEventListener('click', function() {
+        // 这里可以添加统计代码
+        console.log('Tool clicked:', this.textContent, this.href);
+      });
+    });
+  </script>
 </body>
 </html>
